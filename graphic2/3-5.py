@@ -1,5 +1,4 @@
-from calc_CIELAB import deltaE, s2CIEXYZ, CIEXYZ2CIELAB
-import numpy as np
+from calc_CIELAB import deltaE
 import cv2 as cv
 
 if __name__ == '__main__':
