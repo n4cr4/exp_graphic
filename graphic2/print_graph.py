@@ -8,7 +8,7 @@ psnr = []
 for q in jpg_qality:
     filename1 = './img/target.JPG'
     filename2 = f'./img/output/target_{q}.jpg'
-    psnr.append(print_PSNR.calc_PNSR_filename(filename1, filename2))
+    psnr.append(print_PSNR.calc_PSNR_filename(filename1, filename2))
 
 
 # plt.plot(jpg_qality, psnr)
