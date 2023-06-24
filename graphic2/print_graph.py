@@ -3,7 +3,7 @@ import numpy as np
 import print_PSNR
 
 jpg_qality = [1, 5, 10, 20, 40, 80]
-jpg_size = [194, 200, 216, 251, 367, 1022]
+jpg_size = [3, 4, 5, 8, 12, 21]
 psnr = []
 for q in jpg_qality:
     filename1 = './img/q100_s.jpg'
