@@ -6,8 +6,8 @@ jpg_qality = [1, 5, 10, 20, 40, 80]
 jpg_size = [194, 200, 216, 251, 367, 1022]
 psnr = []
 for q in jpg_qality:
-    filename1 = './img/target.JPG'
-    filename2 = f'./img/output/target_{q}.jpg'
+    filename1 = './img/q100_s.jpg'
+    filename2 = f'./img/output/q100s_s_{q}.jpg'
     psnr.append(print_PSNR.calc_PSNR_filename(filename1, filename2))
 
 
