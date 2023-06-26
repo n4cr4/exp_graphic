@@ -34,6 +34,8 @@ def laplacian_filter(img, neighborhood=4):
                         I = img[py, px, b]
                         if neighborhood == 4:
                             g = KERNEL4[j][i]
+                        elif neighborhood == 8:
+                            g = KERNEL8[j][i]
 
                         sum += I * g
                 ret_img[h, w, b] = sum
@@ -49,8 +51,11 @@ if __name__ == '__main__':
                 'noise_s_whitenoise',
                 'noise2_s_gomashio']
     img = cv.imread(f'./img/{img_list[0]}.jpg')
-    ret_img = laplacian_filter(img)
-    for i in range(10):
-        print(ret_img[100, i, 2])
+    for path in img_list:
+        for i in (4, 8):
+            print(f'./img/{path}.jpg')
+            img = cv.imread(f'./img/{path}.jpg')
+            ret_img = laplacian_filter(img, neighborhood=i)
+            cv.imwrite(f'./img/output/laplacian/{path}_{i}.jpg', ret_img)
 
 
