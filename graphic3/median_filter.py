@@ -44,5 +44,5 @@ if __name__ == '__main__':
             print(f'./img/{path}.jpg')
             img = cv.imread(f'./img/{path}.jpg')
             ret_img = median_filter(img, filter_size=i)
-            cv.imwrite(f'./img/output/{path}_{i}.jpg', ret_img)
+            cv.imwrite(f'./img/output/median/{path}_{i}.jpg', ret_img)
 
