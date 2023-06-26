@@ -9,7 +9,6 @@ def median_filter(img, filter_size=3):
 
     ret_img = np.zeros([height, width, bpp])
 
-    n = 0
     for h in range(height):
         for w in range(width):
             for b in range(bpp):
