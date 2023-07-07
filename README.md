@@ -31,3 +31,31 @@ graphic2/img/
 ├── q100_s.jpg
 └── target.JPG
 ```
+
+## graphic3
+```sh
+graphic3/img
+├── noise2_s_gomashio.jpg
+├── noise_s_whitenoise.jpg
+├── output
+│  ├── fourier
+│  │  ├── high_path_filter.jpg
+│  │  ├── mask.jpg
+│  │  ├── original.jpg
+│  │  └── sharp.jpg
+│  ├── laplacian
+│  │  ├── noise2_s_gomashio_4.jpg
+│  │  ├── noise2_s_gomashio_8.jpg
+│  │  ├── noise_s_whitenoise_4.jpg
+│  │  ├── noise_s_whitenoise_8.jpg
+│  │  ├── q100_s_original_4.jpg
+│  │  └── q100_s_original_8.jpg
+│  └── median
+│     ├── noise2_s_gomashio_3.jpg
+│     ├── noise2_s_gomashio_5.jpg
+│     ├── noise_s_whitenoise_3.jpg
+│     ├── noise_s_whitenoise_5.jpg
+│     ├── q100_s_original_3.jpg
+│     └── q100_s_original_5.jpg
+└── q100_s_original.jpg
+```
