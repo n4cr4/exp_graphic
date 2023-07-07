@@ -39,6 +39,7 @@ def laplacian_filter(img, neighborhood=4):
 
                         sum += I * g
                 ret_img[h, w, b] = sum
+    ret_img = np.clip(ret_img, 0, 255)
 
     return ret_img
 
